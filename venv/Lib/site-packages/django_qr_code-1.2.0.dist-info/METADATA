@@ -1,0 +1,32 @@
+Metadata-Version: 2.1
+Name: django-qr-code
+Version: 1.2.0
+Summary: An application that provides tools for displaying QR codes on your Django site.
+Home-page: https://github.com/dprog-philippe-docourt/django-qr-code
+Author: Philippe Docourt
+Author-email: philippe@docourt.ch
+Maintainer: Philippe Docourt
+License: BSD 3-clause
+Keywords: qr code django
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Internet :: WWW/HTTP
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Framework :: Django :: 2.2
+Classifier: Framework :: Django :: 3.0
+Classifier: Natural Language :: English
+Requires-Python: >=3
+Requires-Dist: qrcode
+Requires-Dist: django
+
+This application provides tools for displaying QR codes on your `Django <https://www.djangoproject.com/>`_ site.
+
+This application depends on the `qrcode <https://github.com/lincolnloop/python-qrcode>`_ python library which requires the `Pillow <https://github.com/python-pillow/Pillow>`_ library in order to support PNG image format. The Pillow library needs to be installed manually if you want to generate QR codes in PNG format; otherwise, only SVG is format is supported.
+
+This app makes no usage of the Django models and therefore do not use any database.
+
+Only Python >= 3.6 is supported.
+
